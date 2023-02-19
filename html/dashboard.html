@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Vertz – Dashboard</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="icon" type="image/svg" id="icon" href="../logo.svg"/>
+        <link rel="stylesheet" type="text/css" href="../css/dashboard.css"/>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script src="https://www.editeyusercontent.com/preview/1c_hhRGD3bhwOtWwfBD8QofW9rD3T1kbe/code.js?pe=yikuansun2015@gmail.com"></script>
+    </head>
+    <body>
+        <div class="main">
+            <div class="panel">
+                <div onclick="window.location.href='./home.html';" class="logo">
+                    <img src="../logo.svg" draggable="false">
+                    <h1>VERTZ</h1>
+                </div>
+                <hr class="logo_hr">
+                <div class="classes">
+                    <div class="modules">
+                        <h1>MODULES</h1>
+                        <div class="panel_btn" onclick="panel_btn(this)"><span class="material-symbols-rounded">chat</span>&nbsp;&nbsp;General</div>
+                        <div class="panel_btn" onclick="panel_btn(this)"><span class="material-symbols-rounded">sports_esports</span>&nbsp;&nbsp;Entertainment</div>
+                        <div class="panel_btn" onclick="panel_btn(this)"><span class="material-symbols-rounded">diamond</span>&nbsp;&nbsp;Economy</div>
+                        <div class="panel_btn" onclick="panel_btn(this)"><span class="material-symbols-rounded">leaderboard</span>&nbsp;&nbsp;Leveling</div>
+                        <div class="panel_btn" onclick="panel_btn(this)"><span class="material-symbols-rounded">visibility_off</span>&nbsp;&nbsp;NSFW</div>
+                        <div class="panel_btn" onclick="panel_btn(this)"><span class="material-symbols-rounded">verified_user</span>&nbsp;&nbsp;Moderation</div>
+                        <div class="panel_btn" onclick="panel_btn(this)"><span class="material-symbols-rounded">construction</span>&nbsp;&nbsp;Configuration</div>
+                    </div>
+                    <div class="more">
+                        <h1>MORE</h1>
+                        <div class="panel_btn" onclick="panel_btn(this)"><span class="material-symbols-rounded">groups</span>&nbsp;&nbsp;Leaderboard</div>
+                        <div class="panel_btn" onclick="panel_btn(this)"><span class="material-symbols-rounded">public</span>&nbsp;&nbsp;Globalboard</div>
+                        <div class="panel_btn" onclick="panel_btn(this)"><span class="material-symbols-rounded">warning</span>&nbsp;&nbsp;Warnings</div>
+                        <div class="panel_btn" onclick="panel_btn(this)"><span class="material-symbols-rounded">update</span>&nbsp;&nbsp;Uptime</div>
+                    </div>
+                    <div class="other">
+                        <h1>OTHER</h1>
+                        <div class="panel_btn" onclick="panel_btn(this)"><span class="material-symbols-rounded">settings</span>&nbsp;&nbsp;Settings</div>
+                    </div>
+                </div>
+                <hr class="logo_hr">
+                <div class="panel_pfp">
+                    <img onerror="this.src='../icons_folder/no_image.svg'" draggable="false" id="pfp" src="https://cdn.discordapp.com/attachments/1041345543672176680/1070001021629247578/Picsart_23-01-25_17-12-34-276.jpg">
+                    <h1>Sign Out&nbsp;</h1>
+                    <span class="material-symbols-rounded">logout</span>
+                </div>
+            </div>
+            <div id="ui" class="ui">
+                <div class="sub_ui" id="general-ui">
+                    <div class="txt">
+                        <h1>General</h1>
+                        <h2>A set of commands made for everyone</h2>
+                        <h3><span><sup id="general-ui-commands_count">--</sup>/<sub id="general-ui-commands_total">--</sub></span>&nbsp;&nbsp;&nbsp;<sup>COMMANDS ENABLED</sup></h3>
+                    </div>
+                    <div class="cmds">
+                        <div>
+                            <h1>v?profile <span>[member]</span></h1>
+                            <button id="292949203912039" onclick="ui_command_btn(this)"><span class="material-symbols-rounded">delete</span></button>
+                            <h5>Displays infomartion about a member</h5>
+                            <div class="example">
+                                <img src="../logo2.svg">
+                                <h1>Vertz</h1>
+                                <h2>BOT</h2>
+                                <h3 class="time_txt">Today at --:-- AM</h3>
+                                <h4>v?profile <span>@Vertz</span></h4>
+                            </div>
+                        </div>
+                        <div>
+                            <h1>v?ping</h1>
+                            <button id="139820483202894940294" onclick="ui_command_btn(this)"><span class="material-symbols-rounded">delete</span></button>
+                            <h5>Retrieves and displays the bot’s latency</h5>
+                            <div class="example">
+                                <img src="../logo2.svg">
+                                <h1>Vertz</h1>
+                                <h2>BOT</h2>
+                                <h3 class="time_txt">Today at --:-- AM</h3>
+                                <h4>v?ping</h4>
+                            </div>
+                        </div>
+                        <div>
+                            <h1>v?calculate <span>&ltproblem></span></h1>
+                            <button id="29840193984" onclick="ui_command_btn(this)"><span class="material-symbols-rounded">delete</span></button>
+                            <h5>Attempts to solve a mathematical equation</h5>
+                            <div class="example">
+                                <img src="../logo2.svg">
+                                <h1>Vertz</h1>
+                                <h2>BOT</h2>
+                                <h3 class="time_txt">Today at --:-- AM</h3>
+                                <h4>v?calculate 2 + 2</h4>
+                            </div>
+                        </div>
+                        <div>
+                            <h1>v?help</h1>
+                            <button id="183893904099" onclick="ui_command_btn(this)"><span class="material-symbols-rounded">delete</span></button>
+                            <h5>Shares a list of the bot’s commands</h5>
+                            <div class="example">
+                                <img src="../logo2.svg">
+                                <h1>Vertz</h1>
+                                <h2>BOT</h2>
+                                <h3 class="time_txt">Today at --:-- AM</h3>
+                                <h4>v?help</h4>
+                            </div>
+                        </div>
+                        <div>
+                            <h1>v?vertzlolol <span>&ltquestion></span></h1>
+                            <button id="393094920593095" onclick="ui_command_btn(this)"><span class="material-symbols-rounded">delete</span></button>
+                            <h5>Allows you to question Vertz</h5>
+                            <div class="example">
+                                <img src="../logo2.svg">
+                                <h1>Vertz</h1>
+                                <h2>BOT</h2>
+                                <h3 class="time_txt">Today at --:-- AM</h3>
+                                <h4>v?vertz Am I smart?</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub_ui" id="entertainment-ui">
+                    <div class="txt">
+                        <h1>Entertainment</h1>
+                        <h2>The set of commands to lighten your mood</h2>
+                        <h3><span><sup id="entertainment-ui-commands_count">--</sup>/<sub id="entertainment-ui-commands_total">--</sub></span>&nbsp;&nbsp;&nbsp;<sup>COMMANDS ENABLED</sup></h3>
+                    </div>
+                    <div class="cmds">
+                        <div>
+                            <h1>v?profile <span>[member]</span></h1>
+                            <button id="292949393923912039" onclick="ui_command_btn(this)"><span class="material-symbols-rounded">delete</span></button>
+                            <h5>Displays infomartion about a member</h5>
+                            <div class="example">
+                                <img src="../logo2.svg">
+                                <h1>Vertz</h1>
+                                <h2>BOT</h2>
+                                <h3 class="time_txt">Today at --:-- AM</h3>
+                                <h4>v?profile <span>@Vertz</span></h4>
+                            </div>
+                        </div>
+                        <div>
+                            <h1>v?ping</h1>
+                            <button id="139820349322094940294" onclick="ui_command_btn(this)"><span class="material-symbols-rounded">delete</span></button>
+                            <h5>Retrieves and displays the bot’s latency</h5>
+                            <div class="example">
+                                <img src="../logo2.svg">
+                                <h1>Vertz</h1>
+                                <h2>BOT</h2>
+                                <h3 class="time_txt">Today at --:-- AM</h3>
+                                <h4>v?ping</h4>
+                            </div>
+                        </div>
+                        <div>
+                            <h1>v?calculate <span>&ltproblem></span></h1>
+                            <button id="2984019409343958584" onclick="ui_command_btn(this)"><span class="material-symbols-rounded">delete</span></button>
+                            <h5>Attempts to solve a mathematical equation</h5>
+                            <div class="example">
+                                <img src="../logo2.svg">
+                                <h1>Vertz</h1>
+                                <h2>BOT</h2>
+                                <h3 class="time_txt">Today at --:-- AM</h3>
+                                <h4>v?calculate 2 + 2</h4>
+                            </div>
+                        </div>
+                        <div>
+                            <h1>v?help</h1>
+                            <button id="183839029304099" onclick="ui_command_btn(this)"><span class="material-symbols-rounded">delete</span></button>
+                            <h5>Shares a list of the bot’s commands</h5>
+                            <div class="example">
+                                <img src="../logo2.svg">
+                                <h1>Vertz</h1>
+                                <h2>BOT</h2>
+                                <h3 class="time_txt">Today at --:-- AM</h3>
+                                <h4>v?help</h4>
+                            </div>
+                        </div>
+                        <div>
+                            <h1>v?vertzlolol <span>&ltquestion></span></h1>
+                            <button id="39193349209320593095" onclick="ui_command_btn(this)"><span class="material-symbols-rounded">delete</span></button>
+                            <h5>Allows you to question Vertz</h5>
+                            <div class="example">
+                                <img src="../logo2.svg">
+                                <h1>Vertz</h1>
+                                <h2>BOT</h2>
+                                <h3 class="time_txt">Today at --:-- AM</h3>
+                                <h4>v?vertz Am I smart?</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="../js/dashboard.js"></script>
+</html>
