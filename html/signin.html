@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+        <title>Vertz – Create an Account</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="icon" type="image/svg" id="icon" href=""/>
+        <link rel="stylesheet" type="text/css" href="../css/signin.css"/>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script src="https://www.editeyusercontent.com/preview/1c_hhRGD3bhwOtWwfBD8QofW9rD3T1kbe/code.js?pe=yikuansun2015@gmail.com"></script>
+    </head>
+    <style>
+        </style>
+    <body>
+        <div class="main">
+            <div class="holder">
+                <div class="ui">
+                    <h1 class="heading">Sign up!</h1>
+                    <h2 class="subheading">Please create an account below</h2>
+                    <h2 id="box-h2-main" class="box-h2">Usernames must be at least 3 characters long</h2>
+                    <div class="box">
+                        <span class="material-symbols-rounded">person</span>
+                        <input id="box1" onkeydown="name_input(this)" onkeyup="name_input(this); verify();" type="text" placeholder="Enter a username" maxlength="30">
+                    </div>
+                    <h2 id="box-h2-email" class="box-h2">Invalid email</h2>
+                    <div class="box">
+                        <span class="material-symbols-rounded">mail</span>
+                        <input id="box2" onkeydown="email_input(this)" onkeyup="email_input(this); verify();" type="email" placeholder="Enter a email">
+                    </div>
+                    <h2 id="box-h2-pw1" class="box-h2">Passwords must be at least 8 characters long</h2>
+                    <div class="box">
+                        <span class="material-symbols-rounded">key</span>
+                        <input id="box3" onkeydown="pw_input1(this); password(this);" onkeyup="pw_input1(this); verify(); password(this);" type="password" placeholder="Enter a password" maxlength="16">
+                    </div>
+                    <h2 id="box-h2-pw2" class="box-h2">Passwords must be at least 8 characters long</h2>
+                    <div class="box">
+                        <span class="material-symbols-rounded">lock_clock</span>
+                        <input id="box4" onkeydown="pw_input2(this); password(this);" onkeyup="pw_input2(this); verify(); password(this);" type="password" placeholder="Confirm password" maxlength="16">
+                    </div>
+                    <div class="agreement">
+                        <input onchange="verify();" id="box5" type="checkbox" required>
+                        <h2>I agree to Vertz’s <span>Terms of Service</span></h2>
+                    </div>
+                    <button id="le_btn">Get Started <span class="material-symbols-rounded">arrow_forward</span></button>
+                </div>
+                <div class="vector">
+                    <img class="img" src="../vectors_folder/signin_vector.svg">
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="../js/signin.js"></script>
+</html>
