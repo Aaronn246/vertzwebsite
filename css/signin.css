@@ -60,7 +60,7 @@ body{
 }
 
 .main{
-    background: url('../pattern.svg'), var(--background);
+    background: url('../backgrounds_folder/pattern.svg'), var(--background);
     background-size: 100%;
     font-family: 'Poppins';
     overflow-x: hidden;
@@ -96,6 +96,18 @@ body{
 .vector .img{
     height: 80%;
     width: 80%;
+}
+
+.vector .img #Body{
+    animation: body;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.vector .img #Head{
+    animation: head;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 .ui{
@@ -210,17 +222,124 @@ body{
     box-shadow: inset 12.5rem 0 0 0 var(--green2);
 }
 
+@media only screen and (max-width: 945px) {
+    .holder{
+        padding: 5vw;
+        border-radius: 2vw;
+        width: 75vw;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .vector{
+        width: 25vw;
+        height: 100%;
+        display: none;
+    }
+    
+    .ui{
+        width: 75vw;
+        height: 100%;
+        margin-left: 0vw;
+    }
+    
+    .ui .heading{
+        font-size: 5vw;
+        font-weight: 700;
+        margin-top: 0vw;
+    }
+    
+    .ui .subheading{
+        font-size: 3vw;
+        font-weight: 400;
+        margin-bottom: 2vw;
+    }
+    
+    .ui .box{
+        margin-bottom: 2vw;
+        gap: 1vw;
+    }
+    
+    .ui .box-h2{
+        font-size: 2.5vw;
+        margin-bottom: 0.5vw;
+        margin-left: 2rem;
+        text-align: left;
+    }
+    
+    .ui .box input{
+        height: 5vw;
+        padding: 0.5vw 1vw;
+        border-radius: 0.5vw;
+        font-size: 2.5vw;
+        border: 0.1vw solid transparent;
+    }
+
+    .ui .box span{
+        font-size: 4vw;
+    }
+    
+    .ui .box input:focus, .ui .box input:hover{
+        border: 0.1vw solid var(--green);
+    }
+    
+    .ui .agreement{
+        gap: 1vw;
+    }
+
+    .ui .agreement input{
+        height: 3vw;
+        width: 2vw;
+    }
+    
+    .ui .agreement h2{
+        font-size: 2vw;
+    }
+    
+    .ui button{
+        padding: 2vw 4vw;
+        font-size: 3vw;
+        border-radius: 1vw;
+        margin-top: 2vw;
+        margin-bottom: 0vw;
+    }
+    
+    .ui button span{
+        margin-left: 1vw;
+        font-size: 3vw;
+    }
+    
+    .ui button:hover{
+        box-shadow: inset 28vw 0 0 0 var(--green2);
+    }
+}
+
 @keyframes body{
     0%{
-
+        transform: translateY(0rem);
     }
     50%{
-
+        transform: translateY(-5rem);
     }
     50%{
-
+        transform: translateY(-5rem);
     }
     100%{
-        
+        transform: translateY(0rem);
+    }
+}
+
+@keyframes head{
+    0%{
+        transform: translateY(0rem) rotate(0deg);
+    }
+    50%{
+        transform: translateY(-0.5rem) rotate(-3deg);
+    }
+    50%{
+        transform: translateY(-0.5rem) rotate(-3deg);
+    }
+    0%{
+        transform: translateY(0rem) rotate(0deg);
     }
 }
