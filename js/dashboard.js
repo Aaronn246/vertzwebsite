@@ -41,6 +41,9 @@ function panel_btn(element){
         btns[i].style.color = '';
     };
 
+    document.getElementById('general-btn').style.background = 'transparent';
+    document.getElementById('general-btn').style.color = 'var(--txt2)';
+
     element.style.background = 'rgba(255, 255, 255, 0.2)';
     element.style.color = 'var(--txt1)';
 
