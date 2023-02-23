@@ -521,6 +521,14 @@ body{
     margin-right: 0.5rem;
 }
 
+.header .menu2{
+    display: none;
+}
+
+.header .menu2 ul{
+    display: none;
+}
+
 @media only screen and (max-width: 945px) {
     .header{
         background: var(--background2);
@@ -546,7 +554,7 @@ body{
         letter-spacing: 1vw;
     }
     
-    .header ul{
+    .header .ul{
         display: none;
     }
 
@@ -556,6 +564,81 @@ body{
 
     .header .menu{
         display: block;
+    }
+
+    .header .menu2{
+        z-index: 1000;
+        text-align: center;
+        transform: scale(0.9);
+        transition: 0.15s;
+    }
+
+    .header .menu2 ul{
+        display: grid;
+        grid-template-columns: 1fr;
+        background: var(--background3);
+        padding: 2vw;
+        font-size: 3vw;
+        border-radius: 1vw;
+        width: 30vw;
+        gap: 0.5vw;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 11vw;
+        margin-right: 1.5vw;
+    }
+
+    .header .menu2 ul li{
+        padding: 0.5vw 1vw;
+        border-radius: 0.5vw;
+        transition: none;
+    }
+
+    .header .menu2 ul li:hover{
+        background: rgba(255, 255, 255, 0.1);
+        color: var(--txt1);
+    }
+
+    .header .menu2 #menu2-signin{
+        background: var(--button);
+        color: var(--txt1);
+        transition: 0.25s;
+    }
+
+    .header .menu2 #menu2-signin:hover{
+        box-shadow: inset 30vw 0 0 0 var(--button_hover);
+    }
+
+    .header .menu2 #menu2-getstarted{
+        background: var(--green);
+        color: var(--txt1);
+        transition: 0.25s;
+    }
+
+    .header .menu2 #menu2-getstarted:hover{
+        box-shadow: inset 30vw 0 0 0 var(--green2);
+    }
+
+    .header .menu2 ul hr{
+        width: calc(100% + 2vw);
+        height: 0.1vw;
+        background: var(--hr);
+        border: none;
+        margin-top: 1vw;
+        margin-bottom: 2vw;
+        margin-left: -1vw;
+    }
+
+    .header .menu2 ul div::after{
+        content: '';
+        position: absolute;
+        bottom: 100%;
+        left: 90%;
+        margin-left: -1.5vw;
+        border-width: 1.5vw;
+        border-style: solid;
+        border-color: transparent transparent var(--background3) transparent;
     }
 
     .section1{
