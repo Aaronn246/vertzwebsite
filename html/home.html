@@ -19,7 +19,7 @@
                     <img src="../logos_folder/logo.svg" draggable="false">
                     <h1>VERTZ</h1>
                 </div>
-                <ul>
+                <ul class="ul">
                     <li onclick="window.location.href='#features';">Features</li>
                     <li onclick="window.location.href='#statistics';">Commands</li>
                     <li onclick="window.location.href='#servers';">Servers</li>
@@ -29,8 +29,20 @@
                     <div onclick="window.location.href='./dashboard.html';" class="signin">Sign In</div>
                     <div onclick="window.location.href='./signin.html'" class="signup">Get Started</div>
                 </div>
-                <div class="menu">
+                <div class="menu" onclick="menu_btn_click()">
                     <span class="material-symbols-rounded">menu</span>
+                </div>
+                <div id="menu-ui" class="menu2">
+                    <ul class="menu-ui-ul">
+                        <div></div>
+                        <li>Features</li>
+                        <li>Commands</li>
+                        <li>Servers</li>
+                        <li>Support</li>
+                        <hr>
+                        <li id="menu2-signin" onclick="window.location.href='./dashboard.html';">Sign In</li>
+                        <li id="menu2-getstarted" onclick="window.location.href='./signin.html';">Get Started</li>
+                    </ul>
                 </div>
             </div>
             <div class="section1">
@@ -203,5 +215,6 @@
                 </div>
             </div>
         </div>
+        <script src="../js/home.js"></script>
     </body>
 </html>
