@@ -22,7 +22,7 @@
 }
 
 ::-webkit-scrollbar-track {
-    background: var(--background2);
+    background: rgb(54, 56, 54);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -221,6 +221,10 @@ body{
     font-weight: 400;
 }
 
+.footer .languages .btn h1 span{
+    transition: 0.25s;
+}
+
 .footer .languages .btn img{
     height: 2.5rem;
     width: 2.5rem;
@@ -357,6 +361,69 @@ body{
 .container .body .servers div h4:hover{
     cursor: pointer;
     box-shadow: inset 6.1rem 0 0 0 var(--green2);
+}
+
+.languages .container{
+    background: var(--background3);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    overflow-y: scroll;
+    width: 12.5rem;
+    height: 20rem;
+    position: absolute;
+    margin-top: -25rem;
+    margin-left: 0rem;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    transform: scale(0.9);
+    display: none;
+}
+
+.languages .container::-webkit-scrollbar {
+    width: 0.65rem;
+}
+
+.languages .container::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.17);
+    border-bottom-right-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.languages .container::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 2vh;
+}
+
+.languages .container::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.languages .container div{
+    padding: 0rem 0.5rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: var(--txt2);
+    transition: none;
+}
+
+.languages .container div img{
+    aspect-ratio: 1/1;
+    height: 3rem;
+    margin-right: 0.75rem;
+}
+
+.languages .container div h1{
+    font-size: 1.15rem;
+    font-weight: 400;
+    color: inherit;
+    transition: none;
+}
+
+.languages .container div:hover{
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--txt1);
 }
 
 @media only screen and (max-width: 945px) {
