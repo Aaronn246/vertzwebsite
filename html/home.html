@@ -8,7 +8,7 @@
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <link rel="icon" type="image/svg" id="icon" href="../logos_folder/logo2.svg"/>
-        <link rel="stylesheet" type="text/css" href="../css/home.css"/>
+        <link rel="stylesheet" type="text/css" href="../css/servers.css"/>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
         <script src="https://www.editeyusercontent.com/preview/1c_hhRGD3bhwOtWwfBD8QofW9rD3T1kbe/code.js?pe=yikuansun2015@gmail.com"></script>
     </head>
@@ -20,9 +20,9 @@
                     <h1>VERTZ</h1>
                 </div>
                 <ul class="ul">
-                    <li onclick="window.location.href='#features';">Features</li>
-                    <li onclick="window.location.href='#statistics';">Commands</li>
-                    <li onclick="window.location.href='#servers';">Servers</li>
+                    <li onclick="window.location.href='#';">Features</li>
+                    <li onclick="window.location.href='#';">Commands</li>
+                    <li onclick="window.location.href='./servers.html';">Servers</li>
                     <li>Support</li>
                 </ul>
                 <div class="btns">
@@ -35,9 +35,9 @@
                 <div id="menu-ui" class="menu2">
                     <ul class="menu-ui-ul">
                         <div></div>
-                        <li onclick="window.location.href='#features'; close_menu();">Features</li>
-                        <li onclick="window.location.href='#statistics'; close_menu();">Commands</li>
-                        <li onclick="window.location.href='#servers'; close_menu();">Servers</li>
+                        <li onclick="window.location.href='#'; close_menu();">Features</li>
+                        <li onclick="window.location.href='#'; close_menu();">Commands</li>
+                        <li onclick="window.location.href='./servers.html';">Servers</li>
                         <li onclick="close_menu();">Support</li>
                         <hr>
                         <li id="menu2-signin" onclick="window.location.href='./dashboard.html'; close_menu();">Sign In</li>
@@ -45,176 +45,121 @@
                     </ul>
                 </div>
             </div>
-            <div class="section1">
-                <div class="p1">
-                    <h1>Make your Discord server <span>more enjoyable!</span></h1>
-                    <h2>A Discord bot that does it all! It provides a large amount of free easy-to-use commands and features like moderation, entertainment, leveling, and much more.</h2>
-                    <div class="btns">
-                        <div class="inv" onclick="window.open('https://discord.com/api/oauth2/authorize?client_id=956940545631084564&permissions=8&scope=bot')">Invite Vertz</div>
-                        <div onclick="window.location.href='#statistics';" class="cmds">See Commands</div>
+            <div class="container">
+                <div class="heading">Public Servers</div>
+                <div class="body">
+                    <div class="search">
+                        <input id="search-txt" type="text" placeholder="Find the best servers">
+                        <span onclick="search()" class="material-symbols-rounded">search</span>
                     </div>
-                </div>
-                <div class="p2">
-                    <img src="../vectors_folder/home_vector.svg" draggable="false">
-                </div>
-            </div>
-            <div class="section2">
-                <div id="features" class="heading">Features</div>
-                <div class="holder">
-                    <div>
+                    <div id="servers" class="servers">
                         <div>
-                            <img src="../icons_folder/moderation_icon.svg" draggable="false">
+                            <img onerror="this.src='../icons_folder/no_image.svg'" src="#" draggable="false">
+                            <h1>The Plague</h1>
+                            <h2>2.9K Members</h2>
+                            <h3>Don’t stress yourself out when dealing with misbehaving members. By enabling Vertz’s high-quality moderation, you’ll have it set up in no time!</h3>
+                            <h4>Join</h4>
                         </div>
-                        <h1>Moderation</h1>
-                        <h2>Don’t stress yourself out when dealing with misbehaving members. By enabling <span>Vertz’s high-quality moderation</span>, you’ll have them disciplined in no time!</h2>
-                    </div>
-                    <div>
                         <div>
-                            <img src="../icons_folder/leveling_icon.svg" draggable="false">
+                            <img onerror="this.src='../icons_folder/no_image.svg'" src="https://i.pinimg.com/originals/93/e2/bd/93e2bde9b13c3cd2e95ba030c385f955.jpg" draggable="false">
+                            <h1>Yo Mom's Dungeon</h1>
+                            <h2>8.3M Members</h2>
+                            <h3>Don’t stress yourself out when dealing with misbehaving members. By enabling Vertz’s high-quality moderation, you’ll have it set up in no time!</h3>
+                            <h4>Join</h4>
                         </div>
-                        <h1>Leveling</h1>
-                        <h2>Like other Discord bots, Vertz supports a leveling system that saves a member’s messaging data. The more they engage with others, the higher their levels go.</h2>
-                    </div>
-                    <div>
                         <div>
-                            <img src="../icons_folder/economy_icon.svg" draggable="false">
+                            <img onerror="this.src='../icons_folder/no_image.svg'" src="https://www.losersclub.es/wp-content/uploads/2022/12/MGS0000013728-0.jpeg" draggable="false">
+                            <h1>Minecraft Losers</h1>
+                            <h2>403 Members</h2>
+                            <h3>Don’t stress yourself out when dealing with misbehaving members. By enabling Vertz’s high-quality moderation, you’ll have it set up in no time!</h3>
+                            <h4>Join</h4>
                         </div>
-                        <h1>Economy</h1>
-                        <h2>Don’t stress yourself out when dealing with misbehaving members. By enabling Vertz’s high-quality moderation, you’ll have it set up in no time!</h2>
                     </div>
-                    <div>
-                        <div>
-                            <img src="../icons_folder/multilingual_icon.svg" draggable="false">
-                        </div>
-                        <h1>Multilingual</h1>
-                        <h2>Engaging with users who may speak a different language can be challenging. Luckily, being the high-tech bot it is, Vertz supports <span>13 languages!</span></h2>
-                    </div>
-                    <div>
-                        <div>
-                            <img src="../icons_folder/entertainment_icon.svg" draggable="false">
-                        </div>
-                        <h1>Entertainment</h1>
-                        <h2>There’s no fun without some type of entertainment. Luckily, Vertz has a solution to that problem by sharing intriguing content.</h2>
-                    </div>
-                    <div>
-                        <div>
-                            <img src="../icons_folder/reliable_icon.svg" draggable="false">
-                        </div>
-                        <h1>Reliable</h1>
-                        <h2>Vertz offers <span>99.9% uptime and reliability</span> when it comes to its users. Its commitment to please them is ultimately too high.</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="section3">
-                <div id="statistics" class="heading">Statistics</div>
-                <div class="holder">
-                    <div>
-                        <img src="../icons_folder/commands_icon.svg" draggable="false">
-                        <h1>Commands</h1>
-                        <h2>Vertz has a total of <span>50</span> functional commands</h2>
-                    </div>
-                    <div onclick="window.location.href='./servers.html';">
-                        <img src="../icons_folder/servers_icon.svg" draggable="false">
-                        <h1>Servers</h1>
-                        <h2>Vertz is deployed in <span>367</span> Discord servers worldwide</h2>
-                    </div>
-                    <div>
-                        <img src="../icons_folder/uptime_icon.svg" draggable="false">
-                        <h1>Uptime</h1>
-                        <h2>Vertz has been in service for <span>2 years, 7 months, 5 days, and 17 hours</span></h2>
-                    </div>
-                </div>
-            </div>
-            <div class="section4">
-                <div id="servers" class="heading">Public Servers</div>
-                <div class="holder">
-                    <div>
-                        <img onerror="this.src='../icons_folder/no_image.svg'" src="" draggable="false">
-                        <h1>The Plague</h1>
-                        <h2>2.9K Members</h2>
-                        <h3>Don’t stress yourself out when dealing with misbehaving members. By enabling Vertz’s high-quality moderation, you’ll have it set up in no time!</h3>
-                        <h4>Join</h4>
-                    </div>
-                    <div>
-                        <img onerror="this.src='../icons_folder/no_image.svg'" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Aspect_ratio_-_3x2.svg/1200px-Aspect_ratio_-_3x2.svg.png" draggable="false">
-                        <h1>Lasko Warriors</h1>
-                        <h2>3.6M Members</h2>
-                        <h3>Don’t stress yourself out when dealing with misbehaving members. By enabling Vertz’s high-quality moderation, you’ll have it set up in no time!</h3>
-                        <h4>Join</h4>
-                    </div>
-                    <div>
-                        <img onerror="this.src='../icons_folder/no_image.svg'" src="https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/img/minecraft-creeper-face.jpg" draggable="false">
-                        <h1>Minecraft Let's Play Lounge</h1>
-                        <h2>120.1K Members</h2>
-                        <h3>Don’t stress yourself out when dealing with misbehaving members. By enabling Vertz’s high-quality moderation, you’ll have it set up in no time!</h3>
-                        <h4>Join</h4>
-                    </div>
-                    <div>
-                        <img onerror="this.src='../icons_folder/no_image.svg'" src="" draggable="false">
-                        <h1>The Plague</h1>
-                        <h2>2.9K Members</h2>
-                        <h3>Don’t stress yourself out when dealing with misbehaving members. By enabling Vertz’s high-quality moderation, you’ll have it set up in no time!</h3>
-                        <h4>Join</h4>
-                    </div>
-                    <div>
-                        <img onerror="this.src='../icons_folder/no_image.svg'" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Aspect_ratio_-_3x2.svg/1200px-Aspect_ratio_-_3x2.svg.png" draggable="false">
-                        <h1>Lasko Warriors</h1>
-                        <h2>3.6M Members</h2>
-                        <h3>Don’t stress yourself out when dealing with misbehaving members. By enabling Vertz’s high-quality moderation, you’ll have it set up in no time!</h3>
-                        <h4>Join</h4>
-                    </div>
-                    <div>
-                        <img onerror="this.src='../icons_folder/no_image.svg'" src="https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/img/minecraft-creeper-face.jpg" draggable="false">
-                        <h1>Minecraft Let's Play Lounge</h1>
-                        <h2>120.1K Members</h2>
-                        <h3>Don’t stress yourself out when dealing with misbehaving members. By enabling Vertz’s high-quality moderation, you’ll have it set up in no time!</h3>
-                        <h4>Join</h4>
-                    </div>
-                    <div>
-                        <img onerror="this.src='../icons_folder/no_image.svg'" src="" draggable="false">
-                        <h1>The Plague</h1>
-                        <h2>2.9K Members</h2>
-                        <h3>Don’t stress yourself out when dealing with misbehaving members. By enabling Vertz’s high-quality moderation, you’ll have it set up in no time!</h3>
-                        <h4>Join</h4>
-                    </div>
-                    <div>
-                        <img onerror="this.src='../icons_folder/no_image.svg'" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Aspect_ratio_-_3x2.svg/1200px-Aspect_ratio_-_3x2.svg.png" draggable="false">
-                        <h1>Lasko Warriors</h1>
-                        <h2>3.6M Members</h2>
-                        <h3>Don’t stress yourself out when dealing with misbehaving members. By enabling Vertz’s high-quality moderation, you’ll have it set up in no time!</h3>
-                        <h4>Join</h4>
-                    </div>
-                    <div>
-                        <img onerror="this.src='../icons_folder/no_image.svg'" src="https://www.minecraft.net/etc.clientlibs/minecraft/clientlibs/main/resources/img/minecraft-creeper-face.jpg" draggable="false">
-                        <h1>Minecraft Let's Play Lounge</h1>
-                        <h2>120.1K Members</h2>
-                        <h3>Don’t stress yourself out when dealing with misbehaving members. By enabling Vertz’s high-quality moderation, you’ll have it set up in no time!</h3>
-                        <h4>Join</h4>
-                    </div>
-                </div>
-                <div onclick="window.location.href='./servers.html';" class="more">
-                    <hr class="hr1">
-                    <h1>See All Servers</h1>
-                    <hr class="hr2">
                 </div>
             </div>
             <div class="footer">
                 <div class="holder">
-                    <div class="logo" onclick="window.location.href='./home.html';">
+                    <div class="logo" onclick="window.location.reload();">
                         <img src="../logos_folder/logo.svg" draggable="false">
                         <h1>VERTZ</h1>
                     </div>
                     <h1 class="slogan">The discord bot that does it all</h1>
                     <h1 class="copyright">Copyright © 2023 Vertz Technology</h1>
                     <div class="languages">
-                        <div class="btn">
+                        <div onclick="languages()" class="btn">
                             <img src="../flags_folder/english.svg">
-                            <h1>English <span class="material-symbols-rounded">expand_more</span></h1>
+                            <h1>English <span id="languages-btn-icon" class="material-symbols-rounded">expand_more</span></h1>
+                        </div>
+                        <div id="languages-ui" class="container">
+                            <div>
+                                <img src="../flags_folder/english.svg">
+                                <h1>English</h1>
+                            </div>
+                            <div>
+                                <img src="../flags_folder/spanish.svg">
+                                <h1>Español</h1>
+                            </div>
+                            <div>
+                                <img src="../flags_folder/portuguese.svg">
+                                <h1>Português</h1>
+                            </div>
+                            <div>
+                                <img src="../flags_folder/french.svg">
+                                <h1>Français</h1>
+                            </div>
+                            <div>
+                                <img src="../flags_folder/italian.svg">
+                                <h1>Italiano</h1>
+                            </div>
+                            <div>
+                                <img src="../flags_folder/german.svg">
+                                <h1>Deutsch</h1>
+                            </div>
+                            <div>
+                                <img src="../flags_folder/poland.svg">
+                                <h1>Polski</h1>
+                            </div>
+                            <div>
+                                <img src="../flags_folder/russian.svg">
+                                <h1>Русский</h1>
+                            </div>
+                            <div>
+                                <img src="../flags_folder/turkish.svg">
+                                <h1>Türkiye</h1>
+                            </div>
+                            <div>
+                                <img src="../flags_folder/arabic.svg">
+                                <h1>عربي</h1>
+                            </div>
+                            <div>
+                                <img src="../flags_folder/hebrew.svg">
+                                <h1>עִברִית</h1>
+                            </div>
+                            <div>
+                                <img src="../flags_folder/hindi.svg">
+                                <h1>हिन्दी</h1>
+                            </div>
+                            <div>
+                                <img src="../flags_folder/chinese.svg">
+                                <h1>中国人</h1>
+                            </div>
+                            <div>
+                                <img src="../flags_folder/japanese.svg">
+                                <h1>日本</h1>
+                            </div>
+                            <div>
+                                <img src="../flags_folder/malay.svg">
+                                <h1>Melayu</h1>
+                            </div>
+                            <div>
+                                <img src="../flags_folder/swahili.svg">
+                                <h1>kiswahili</h1>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <script src="../js/home.js"></script>
+        <script src="../js/servers.js"></script>
     </body>
 </html>
