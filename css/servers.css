@@ -1,0 +1,602 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* verify | https://discord.com/oauth2/authorize?client_id=956940545631084564&redirect_uri=https%3A%2F%2Fwww.youtube.com&response_type=code&scope=identify%20email%20guilds%20applications.commands.permissions.update */
+/* invite | https://discord.com/api/oauth2/authorize?client_id=956940545631084564&permissions=8&scope=bot */
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth !important;
+    transition: 0.25s;
+}
+
+::-moz-selection{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+::selection{
+    background: rgba(81, 92, 80, 0.5);
+}
+
+::-webkit-scrollbar {
+    width: 2vh;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--background2);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 2vh;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+html{
+    cursor: pointer;
+}
+
+img{
+    pointer-events: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+body{
+    cursor: auto;
+    --green: #5CD85A;
+    --green2: #62fb60;
+    --background: rgb(36, 42, 37);
+    --txt1: white;
+    --txt2: rgb(200, 200, 200);
+    --button: rgb(150, 150, 150);
+    --button_hover: rgb(175, 175, 175);
+    --background2: rgb(24, 28, 24);
+    --background3: rgb(13, 16, 13);
+    --hr: rgb(58, 69, 61);
+    --txt3: rgb(208, 255, 212);
+}
+
+.main{
+    background: url('../backgrounds_folder/pattern.svg'), var(--background);
+    background-size: 100%;
+    font-family: 'Poppins';
+    overflow-x: hidden;
+    color: var(--txt1);
+    width: 100%;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--txt1);
+}
+
+.header{
+    background: var(--background2);
+    padding: 1rem;
+    height: 3rem;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.header .logo{
+    width: max-content;
+    margin-right: 1rem;
+    display: flex;
+}
+
+.header .logo:hover{
+    cursor: pointer;
+}
+
+.header .logo img{
+    height: 100%;
+    width: 4rem;
+    margin-right: 0.5rem;
+}
+
+.header .logo h1{
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+}
+
+.header ul{
+    display: flex;
+    column-gap: 2rem;
+    list-style: none;
+    color: var(--txt2);
+}
+
+.header ul li:hover{
+    cursor: pointer;
+    color: var(--green);
+}
+
+.header .btns{
+    display: flex;
+    column-gap: 0.5rem;
+    margin-left: auto;
+}
+
+.header .btns .signin{
+    background: var(--button);
+    padding: 0.75rem 1rem;
+    border-radius: 0.25rem;
+}
+
+.header .btns .signin:hover{
+    cursor: pointer;
+    box-shadow: inset 6rem 0 0 0 var(--button_hover);
+}
+
+.header .btns .signup{
+    background: var(--green);
+    padding: 0.75rem 1rem;
+    border-radius: 0.25rem;
+}
+
+.header .btns .signup:hover{
+    cursor: pointer;
+    box-shadow: inset 8rem 0 0 0 var(--green2);
+}
+
+.header .menu{
+    margin-left: auto;
+    padding: 1vw;
+    display: none;
+}
+
+.header .menu span{
+    font-size: 7vw;
+}
+
+.header .menu span:hover{
+    color: var(--green);
+    cursor: pointer;
+}
+
+.footer{
+    background: var(--background2);
+    padding: 2rem 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    height: max-content;
+}
+
+.footer .logo{
+    width: max-content;
+    margin-right: 1rem;
+    display: flex;
+}
+
+.footer .logo:hover{
+    cursor: pointer;
+}
+
+.footer .logo img{
+    height: 100%;
+    width: 4rem;
+    margin-right: 0.5rem;
+}
+
+.footer .logo h1{
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+}
+
+.footer .slogan{
+    font-size: 1.25rem;
+    color: var(--txt2);
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+
+.footer .copyright{
+    font-weight: 600;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.25);
+    margin-bottom: 1.5rem;
+}
+
+.footer .languages .btn{
+    display: flex;
+    cursor: pointer;
+    width: max-content;
+    color: var(--txt2);
+}
+
+.footer .languages .btn:hover{
+    color: var(--txt1);
+}
+
+.footer .languages .btn h1{
+    font-size: 1rem;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+}
+
+.footer .languages .btn img{
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-right: 0.5rem;
+}
+
+.header .menu2{
+    display: none;
+}
+
+.header .menu2 ul{
+    display: none;
+}
+
+.container{
+    margin: 5rem 3rem;
+    margin-bottom: 0rem;
+}
+
+.container .heading{
+    font-size: 3rem;
+    color: var(--txt1);
+    font-weight: 800;
+    margin-top: 7.5rem;
+    margin-bottom: 3rem;
+}
+
+.container .search{
+    margin-bottom: 10rem;
+    background: var(--background2);
+    padding: 0.5rem 1rem;
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    padding-right: 0.5rem;
+}
+
+.container .search input{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--txt2);
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-left: 1rem;
+    font-family: 'Poppins';
+    width: calc(100% - 8rem);
+}
+
+.container .search span{
+    background: var(--green);
+    border-radius: 3rem;
+    padding: 0.75rem;
+    color: var(--txt1);
+    font-size: 1.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    cursor: pointer;
+    width: 5rem;
+}
+
+.container .search span:hover{
+    box-shadow: inset calc(5rem + 2rem) 0 0 0 var(--green2);
+}
+
+.container .body .servers{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0rem 1rem;
+}
+
+.container .body .servers div{
+    background: var(--background2);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    border: 0.1rem solid transparent;
+    position: relative;
+    margin-bottom: 7.5rem;
+}
+
+.container .body .servers div img{
+    aspect-ratio: 1/1;
+    height: 7rem;
+    margin-top: -5.5rem;
+    border-radius: 100%;
+    border: 0.75rem solid var(--background);
+    margin-left: 1rem;
+    background: var(--background2);
+    object-fit: cover;
+}
+
+.container .body .servers div h1{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.container .body .servers div h2{
+    font-size: 1.25rem;
+    color: var(--txt2);
+    font-weight: 400;
+    padding: 0.5rem 1rem;
+    background: var(--background3);
+    width: max-content;
+    border-radius: 0.25rem;
+}
+
+.container .body .servers div h3{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--txt2);
+    margin-top: 1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 4rem;
+}
+
+.container .body .servers div h4{
+    font-size: 1.5rem;
+    color: var(--txt1);
+    font-weight: 400;
+    padding: 0.25rem 1.5rem;
+    background: var(--green);
+    width: max-content;
+    border-radius: 0.25rem;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 1rem;
+}
+
+.container .body .servers div h4:hover{
+    cursor: pointer;
+    box-shadow: inset 6.1rem 0 0 0 var(--green2);
+}
+
+@media only screen and (max-width: 945px) {
+    .header{
+        background: var(--background2);
+        padding: 2vw;
+        height: 10vw;
+    }
+    
+    .header .logo{
+        margin-right: 2vw;
+    }
+    
+    .header .logo:hover{
+        cursor: pointer;
+    }
+    
+    .header .logo img{
+        width: 10vw;
+        margin-right: 1vw;
+    }
+    
+    .header .logo h1{
+        font-size: 7vw;
+        letter-spacing: 1vw;
+    }
+    
+    .header .ul{
+        display: none;
+    }
+
+    .header .btns{
+        display: none;
+    }
+
+    .header .menu{
+        display: block;
+    }
+
+    .header .menu2{
+        z-index: 1000;
+        text-align: center;
+        transform: scale(0.9);
+        transition: 0.15s;
+    }
+
+    .header .menu2 ul{
+        display: grid;
+        grid-template-columns: 1fr;
+        background: var(--background2);
+        padding: 2vw;
+        font-size: 3vw;
+        border-radius: 1vw;
+        width: 30vw;
+        gap: 0.5vw;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 11vw;
+        margin-right: 1.5vw;
+        box-shadow: rgba(0, 0, 0, 0.25) -1vw 1vw 5vw;
+    }
+
+    .header .menu2 ul li{
+        padding: 0.5vw 1vw;
+        border-radius: 0.5vw;
+        transition: none;
+    }
+
+    .header .menu2 ul li:hover{
+        background: rgba(255, 255, 255, 0.1);
+        color: var(--txt1);
+    }
+
+    .header .menu2 #menu2-signin{
+        background: var(--button);
+        color: var(--txt1);
+        transition: 0.25s;
+        padding: 1vw;
+        margin-bottom: 0.25vw;
+    }
+
+    .header .menu2 #menu2-signin:hover{
+        box-shadow: inset 30vw 0 0 0 var(--button_hover);
+    }
+
+    .header .menu2 #menu2-getstarted{
+        background: var(--green);
+        color: var(--txt1);
+        transition: 0.25s;
+        padding: 1vw;
+    }
+
+    .header .menu2 #menu2-getstarted:hover{
+        box-shadow: inset 30vw 0 0 0 var(--green2);
+    }
+
+    .header .menu2 ul hr{
+        width: calc(100% + 2vw);
+        height: 0.1vw;
+        background: var(--hr);
+        border: none;
+        margin-top: 1vw;
+        margin-bottom: 2vw;
+        margin-left: -1vw;
+    }
+
+    .header .menu2 ul div::after{
+        content: '';
+        position: absolute;
+        bottom: 100%;
+        left: 90%;
+        margin-left: -1.5vw;
+        border-width: 1.5vw;
+        border-style: solid;
+        border-color: transparent transparent var(--background2) transparent;
+    }
+
+    .footer{
+        padding: 4vw 3vw;
+        padding-bottom: 2vw;
+    }
+    
+    .footer .logo{
+        margin-right: 2vw;
+    }
+    
+    .footer .logo:hover{
+        cursor: pointer;
+    }
+    
+    .footer .logo img{
+        width: 10vw;
+        margin-right: 1vw;
+    }
+    
+    .footer .logo h1{
+        font-size: 7vw;
+        letter-spacing: 1vw;
+    }
+    
+    .footer .slogan{
+        font-size: 3vw;
+        margin-bottom: 5vw;
+    }
+    
+    .footer .copyright{
+        font-size: 2.5vw;
+        margin-bottom: 3vw;
+    }
+    
+    .footer .languages .btn h1{
+        font-size: 3vw;
+    }
+
+    .footer .languages .btn h1 span{
+        font-size: 4vw;
+    }
+    
+    .footer .languages .btn img{
+        height: 7vw;
+        width: 7vw;
+        margin-right: 2vw;
+    }
+
+    .container{
+        margin: 10vw 5vw;
+        margin-bottom: 0vw;
+    }
+    
+    .container .heading{
+        font-size: 7vw;
+        margin-top: 7.5vw;
+        margin-bottom: 5vw;
+    }
+    
+    .container .search{
+        margin-bottom: 25vw;
+        padding: 1vw 2vw;
+        border-radius: 5vw;
+        padding-right: 1vw;
+    }
+    
+    .container .search input{
+        font-size: 3.5vw;
+        margin-left: 2vw;
+        width: calc(100% - 10vw);
+    }
+    
+    .container .search span{
+        border-radius: 5vw;
+        padding: 1.5vw;
+        font-size: 5vw;
+        width: 15vw;
+    }
+    
+    .container .search span:hover{
+        box-shadow: inset calc(15vw + 1.5vw) 0 0 0 var(--green2);
+    }
+    
+    .container .body .servers{
+        grid-template-columns: 1fr;
+    }
+    
+    .container .body .servers div{
+        border-radius: 1vw;
+        padding: 2vw;
+    }
+    
+    .container .body .servers div img{
+        height: 20vw;
+        margin-top: -14vw;
+        border: 2vw solid var(--background);
+        margin-left: 3vw;
+    }
+    
+    .container .body .servers div h1{
+        font-size: 5vw;
+    }
+    
+    .container .body .servers div h2{
+        font-size: 4vw;
+        padding: 1vw 2vw;
+        border-radius: 1vw;
+    }
+    
+    .container .body .servers div h3{
+        font-size: 2.75vw;
+        margin-top: 2vw;
+        margin-bottom: 10vw;
+    }
+    
+    .container .body .servers div h4{
+        font-size: 4vw;
+        padding: 1vw 4.5vw;
+        border-radius: 0.75vw;
+        margin-bottom: 2vw;
+    }
+    
+    .container .body .servers div h4:hover{
+        box-shadow: inset 17.5vw 0 0 0 var(--green2);
+    }
+}
