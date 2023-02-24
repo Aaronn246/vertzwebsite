@@ -35,13 +35,13 @@
                 <div id="menu-ui" class="menu2">
                     <ul class="menu-ui-ul">
                         <div></div>
-                        <li>Features</li>
-                        <li>Commands</li>
-                        <li>Servers</li>
-                        <li>Support</li>
+                        <li onclick="window.location.href='#features'; close_menu();">Features</li>
+                        <li onclick="window.location.href='#statistics'; close_menu();">Commands</li>
+                        <li onclick="window.location.href='#servers'; close_menu();">Servers</li>
+                        <li onclick="close_menu();">Support</li>
                         <hr>
-                        <li id="menu2-signin" onclick="window.location.href='./dashboard.html';">Sign In</li>
-                        <li id="menu2-getstarted" onclick="window.location.href='./signin.html';">Get Started</li>
+                        <li id="menu2-signin" onclick="window.location.href='./dashboard.html'; close_menu();">Sign In</li>
+                        <li id="menu2-getstarted" onclick="window.location.href='./signin.html'; close_menu();">Get Started</li>
                     </ul>
                 </div>
             </div>
