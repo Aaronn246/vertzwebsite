@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+        <title>Vertz – A Discord Bot</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="icon" type="image/svg" id="icon" href="../logos_folder/logo2.svg"/>
+        <link rel="stylesheet" type="text/css" href="../css/servers.css"/>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+        <script src="https://www.editeyusercontent.com/preview/1c_hhRGD3bhwOtWwfBD8QofW9rD3T1kbe/code.js?pe=yikuansun2015@gmail.com"></script>
+    </head>
+    <body>
+        <div class="main">
+            <div class="header">
+                <div class="logo" onclick="window.location.href='./home.html';">
+                    <img src="../logos_folder/logo.svg" draggable="false">
+                    <h1>VERTZ</h1>
+                </div>
+                <ul class="ul">
+                    <li onclick="window.location.href='#';">Features</li>
+                    <li onclick="window.location.href='#';">Commands</li>
+                    <li onclick="window.location.href='./servers.html';">Servers</li>
+                    <li>Support</li>
+                </ul>
+                <div class="btns">
+                    <div onclick="window.location.href='./dashboard.html';" class="signin">Sign In</div>
+                    <div onclick="window.location.href='./signin.html'" class="signup">Get Started</div>
+                </div>
+                <div class="menu" onclick="menu_btn_click()">
+                    <span class="material-symbols-rounded">menu</span>
+                </div>
+                <div id="menu-ui" class="menu2">
+                    <ul class="menu-ui-ul">
+                        <div></div>
+                        <li onclick="window.location.href='#'; close_menu();">Features</li>
+                        <li onclick="window.location.href='#'; close_menu();">Commands</li>
+                        <li onclick="window.location.href='./servers.html';">Servers</li>
+                        <li onclick="close_menu();">Support</li>
+                        <hr>
+                        <li id="menu2-signin" onclick="window.location.href='./dashboard.html'; close_menu();">Sign In</li>
+                        <li id="menu2-getstarted" onclick="window.location.href='./signin.html'; close_menu();">Get Started</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container">
+                <div class="heading">Public Servers</div>
+                <div class="body">
+                    <div class="search">
+                        <input type="text" placeholder="Find the best servers">
+                        <span class="material-symbols-rounded">search</span>
+                    </div>
+                    <div class="servers">
+                        <div>
+                            <img onerror="this.src='../icons_folder/no_image.svg'" src="#" draggable="false">
+                            <h1>The Plague</h1>
+                            <h2>2.9K Members</h2>
+                            <h3>Don’t stress yourself out when dealing with misbehaving members. By enabling Vertz’s high-quality moderation, you’ll have it set up in no time!</h3>
+                            <h4>Join</h4>
+                        </div>
+                        <div>
+                            <img onerror="this.src='../icons_folder/no_image.svg'" src="https://i.pinimg.com/originals/93/e2/bd/93e2bde9b13c3cd2e95ba030c385f955.jpg" draggable="false">
+                            <h1>Yo Mom's Dungeon</h1>
+                            <h2>8.3M Members</h2>
+                            <h3>Don’t stress yourself out when dealing with misbehaving members. By enabling Vertz’s high-quality moderation, you’ll have it set up in no time!</h3>
+                            <h4>Join</h4>
+                        </div>
+                        <div>
+                            <img onerror="this.src='../icons_folder/no_image.svg'" src="https://www.losersclub.es/wp-content/uploads/2022/12/MGS0000013728-0.jpeg" draggable="false">
+                            <h1>Minecraft Losers</h1>
+                            <h2>403 Members</h2>
+                            <h3>Don’t stress yourself out when dealing with misbehaving members. By enabling Vertz’s high-quality moderation, you’ll have it set up in no time!</h3>
+                            <h4>Join</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="holder">
+                    <div class="logo" onclick="window.location.reload();">
+                        <img src="../logos_folder/logo.svg" draggable="false">
+                        <h1>VERTZ</h1>
+                    </div>
+                    <h1 class="slogan">The discord bot that does it all</h1>
+                    <h1 class="copyright">Copyright © 2023 Vertz Technology</h1>
+                    <div class="languages">
+                        <div class="btn">
+                            <img src="../flags_folder/english.svg">
+                            <h1>English <span class="material-symbols-rounded">expand_more</span></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="../js/servers.js"></script>
+    </body>
+</html>
